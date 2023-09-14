@@ -30,6 +30,7 @@ SECRET_KEY = "django-insecure-rf)eo78cl8z(2+0s9xh%nk77chz1kt6s^b3=-xd9=$&ax2#32f
 DEBUG = False
 
 ALLOWED_HOSTS = ["localhost", "denscholar.pythonanywhere.com"]
+# ALLOWED_HOSTS = []
 
 
 # Application definition
