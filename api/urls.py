@@ -3,20 +3,12 @@ from django.urls import path, include, re_path
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from rest_framework.routers import DefaultRouter
-from persons.views import PersonViewSet
 
-router = DefaultRouter()
-router.register(
-    "",
-    PersonViewSet,
-    basename='persons'
-)
 
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Person Resource API endpoint",
+        title="HNGX_stage_two task",
         default_version="v1",
         description="This endpoints provides acces to a peprson resource with all CRUD functionalities",
         contact=openapi.Contact(email="d.akagha20@gmail.com"),
@@ -28,8 +20,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include(router.urls)),
-    path("", include("persons.urls")),
+    path("api/", include("persons.urls")),
     path(
         "swagger<format>/", schema_view.without_ui(cache_timeout=0), name="schema-json"
     ),
