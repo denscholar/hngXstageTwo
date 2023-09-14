@@ -2,6 +2,13 @@
 
 This documentation provides information on how to use the the Project API.
 
+# ER design for the project:
+
+
+<img width="533" alt="Screenshot 2023-09-14 144322" src="https://github.com/denscholar/hngXstageTwo/assets/48631109/16020bbd-7af0-4d9e-9059-5d10cc40f864">
+
+
+
 ## API Endpoints
 
 ### List all Persons
