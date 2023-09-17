@@ -30,7 +30,7 @@ class PersonListView(APIView):
         serializer = PersonSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
-            response = {"message": "Person successfully added"}
+            response = {"data": serializer.data}
             return Response(data=response, status=status.HTTP_201_CREATED)
         return Response(serializer.error_messages, status=status.HTTP_400_BAD_REQUEST)
 
